@@ -1,0 +1,3 @@
+Flask==2.3.0
+yfinance==0.2.44
+pymongo==4.10.1
