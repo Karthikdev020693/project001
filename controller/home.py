@@ -31,12 +31,12 @@ def new_collection():
 
     return jsonify(articles)
 
-@home.route('/stockinfo')
-def stock_info():
+@home.route('/stockinfo/<symbol>')
+def stock_info(symbol):
 
     stock  = Stocks()
 
-    info = stock.get_stock_info('HDFCBANK.NS')
+    info = stock.get_stock_info(symbol)
 
     return jsonify(info)
 
